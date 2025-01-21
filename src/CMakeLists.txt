@@ -1,0 +1,5 @@
+set(MAIN_SRC main.cpp)
+
+ADD_EXECUTABLE(main ${MAIN_SRC})
+TARGET_LINK_LIBRARIES(main ${Trilinos_LIBRARIES} ${Trilinos_TPL_LIBRARIES} MPI::MPI_CXX)
+
